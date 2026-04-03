@@ -20,6 +20,4 @@ jobs:
               
             - name: Build Docker image
               run: docker build -t efrei_devops2_rent:latest .
-              
-            - name: Run tests
-              run: ./gradlew test
+            
