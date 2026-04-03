@@ -1,0 +1,25 @@
+name: CI - Docker Build
+
+on:
+    push:
+        branches: [ main, develop ]
+    pull_request:
+        branches: [ main, develop ]
+
+permissions:
+    contents: read
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        timeout-minutes: 20
+
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v4
+              
+            - name: Build Docker image
+              run: docker build -t efrei_devops2_rent:latest .
+              
+            - name: Run tests
+              run: ./gradlew test
