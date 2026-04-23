@@ -34,9 +34,6 @@ jobs:
             - name: Build Docker image
               run: docker build -t efrei_devops2_rent:latest .
 
-
-
-
             - name: SonarCloud Scan
               uses: SonarSource/sonarcloud-github-action@v2
               with:
