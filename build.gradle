@@ -41,10 +41,10 @@ jacocoTestReport {
 		html.required = true
 	}
 }
-sonarqube {
+sonar {
 	properties {
-		property "sonar.projectKey", "TON_PROJECT_KEY"
-		property "sonar.organization", "TON_ORG"
+		property "sonar.projectKey", "Bananabenj_efrei_devops2_rent"
+		property "sonar.organization", "bananabenj"
 		property "sonar.host.url", "https://sonarcloud.io"
 		property "sonar.coverage.jacoco.xmlReportPaths", "build/reports/jacoco/test/jacocoTestReport.xml"
 	}
