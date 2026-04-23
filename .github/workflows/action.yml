@@ -41,8 +41,8 @@ jobs:
               uses: SonarSource/sonarcloud-github-action@v2
               with:
                     args: >
-                      -Dsonar.projectKey=TON_PROJECT_KEY
-                      -Dsonar.organization=TON_ORG
+                      -Dsonar.projectKey=Bananabenj_efrei_devops2_rent
+                      -Dsonar.organization=Bananabenj
                       -Dsonar.host.url=https://sonarcloud.io
                       -Dsonar.coverage.jacoco.xmlReportPaths=build/reports/jacoco/test/jacocoTestReport.xml
               env:
